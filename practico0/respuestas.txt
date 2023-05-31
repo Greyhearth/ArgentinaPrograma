@@ -1,0 +1,29 @@
+En el siguiente archivo .txt se enunciarán las preguntas y respuestas del Práctico 0 (las mismas 
+se encuentran también como comentarios en cada archivo por separado):
+
+Ejercicio 1a - resta.js: ¿Qué valor devuelve su programa si el minuendo es 10 y el sustraendo 2?
+-Con estos valores, el programa devolverá 8.
+
+Ejercicio 1b - multiplicacion.js: ¿Qué valor devuelve su programa si los números son 2 *17 * 6?
+-Con estos valores, el programa devolverá 204.
+
+Ejercicio 2 - areaRectangulo.js: ¿Cuál es el área de un rectángulo de base 5cm y altura 3cm?
+-Si la base es 5 y la altura es 3, el programa devolverá 15 como resultado.
+
+b. ¿Cuál es el área de un rectángulo de base 12.5cm y altura 5.3cm?
+-Si la base es 12.5 y la altura es 5.3, el programa devolverá 66.25 como resultado.
+
+Ejercicio 3 - conversionGrados.js: ¿Cuántos grados C son 50 F?
+-Con un valor de 50 F, el programa devolverá 10 C
+
+b. ¿Cuántos grados C son 75 F?
+-Con un valor de 75 F, el programa devolverá 23.88888888888889 C
+
+Ejercicio 4 - promedio3.js: ¿Cuál es el promedio entre 5, 7 y 9?
+-Con los valores 5, 7 y 9, el programa devolverá 7.
+
+b. ¿Cuál es el promedio entre -2 , -3, -8?
+-Con los valores -2, -3 y -8, el programa devolverá -4.333333333333333.
+
+c. ¿Cuál es el promedio entre -1.2, 5.3, -3.3?
+-Con los valores -1.2, 5.3 y -3.3, el programa devolverá 0.2666666666666666.

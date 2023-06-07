@@ -18,5 +18,5 @@ let resultadoFinal = sumaVar*restaVar;
 //e. Escribe un cálculo que verifique si resultadoFinal es un número par. Almacene el resultado en una variable llamada esPar.
 let esPar = resultadoFinal % 2 === 0;
 
-//f. Imprima por consola un mensaje con el siguiente formato:
+//f. Imprima por consola un mensaje ...:
 console.log("Mis variables iniciales fueron: "+var1+", "+var2+", "+var3+" y "+var4+". La respuesta a verificar si el resultado final es par es: "+esPar);

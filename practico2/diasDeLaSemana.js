@@ -9,7 +9,7 @@ switch (diaSemana) {
         console.log("Hoy es martes");
         break;
     case '3':
-        console.log("Hoy es miércoles");
+        console.log("Hoy es miercoles");
         break;
     case '4':
         console.log("Hoy es jueves");
@@ -18,12 +18,12 @@ switch (diaSemana) {
         console.log("Hoy es viernes");
         break;
     case '6':
-        console.log("Hoy es sábado");
+        console.log("Hoy es sabado");
         break;
     case '7':
         console.log("Hoy es domingo");
         break;
     default:
-      console.log("Número inválido");
+      console.log("Número invalido");
   }
   

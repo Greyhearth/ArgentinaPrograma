@@ -46,4 +46,20 @@ for (let i=0; i<invitadosRechazados.length ; i++) {
 /*● EXTRA: Después de completar con éxito las tareas anteriores, te quedarán dos listas de nombres, los admitidos y los rechazados pero estarán desordenados. El
 desafío es que puedas repetir el inciso anterior, pero esta vez imprimiendo los nombres de manera ordenada alfabéticamente. Deberás agregar la palabra
 “ordenada” posterior a la palabra lista, es decir, para el caso de los admitidos deberás imprimir: “La lista ordenada de invitados admitidos es:”. */
+for (let i=0; i<invitadosAdmitidos.length ; i++) {
+    if (i==0){
+        console.log("La lista ordenada de invitados admitidos es:");
+        console.log(invitadosAdmitidos.sort()[i]);
+    } else {
+        console.log(invitadosAdmitidos.sort()[i]);
+    }
+}
 
+for (let i=0; i<invitadosRechazados.length ; i++) {
+    if (i==0){
+        console.log("La lista ordenada de invitados rechazados es:");
+        console.log(invitadosRechazados.sort()[i]);
+    } else {
+        console.log(invitadosRechazados.sort()[i]);
+    }
+}

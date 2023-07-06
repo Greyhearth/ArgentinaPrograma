@@ -95,9 +95,7 @@ obtenerJugadaComputadora ();
 obtenerJugadaUsuario ();
 determinarGanador (jugadaUsuario, jugadaComputadora);
 
-console.log("La computadora eligio: %s.", jugadaComputadora);
-console.log("El usuario eligio: %s.", jugadaUsuario);
-console.log("El resultado fue: %s.", resultado);
+console.log("La computadora eligio: %s.\nEl usuario eligio: %s.\nEl resultado fue: %s.", jugadaComputadora, jugadaUsuario, resultado);
 
 /*EXTRA 2: Agregar la posibilidad de que el usuario elija en cuantos jugadas quiere terminar el juego, es decir:
     Una jugada: gana el ganador de esa única jugada.

@@ -33,48 +33,34 @@ function obtenerJugadaUsuario () {
     return jugadaUsuario
 }
 
-/*4. Crea una función llamada determinarGanador que tomará como parámetros las jugadas
-de la computadora y del usuario. Implementa las reglas del juego para determinar el
-ganador y retorna el resultado.*/
+/*4. Crea una función llamada determinarGanador que tomará como parámetros las jugadas de la computadora y del usuario. 
+Implementa las reglas del juego para determinar el ganador y retorna el resultado.*/
 function determinarGanador (jugada1, jugada2) {
     if (jugada1 == jugada2){
         return resultado = "Empate"
-    } else if (jugada1 == "piedra") {
-        if (jugada2 == "papel"){
+    } else if ((jugada1 == "piedra" && jugada2 == "papel") || (jugada1 == "papel" && jugada2 == "tijeras") || (jugada1 == "tijeras" && jugada2 == "piedra")) {
             return resultado = "Gana la computadora"
-        }
-        else if (jugada2 == "tijeras") {
+    } else if ((jugada1 == "piedra" && jugada2 == "tijeras") || (jugada1 == "papel" && jugada2 == "piedra") || (jugada1 == "tijeras" && jugada2 == "papel")) {
             return resultado = "Gana el usuario"
-        }
-    } else if (jugada1 == "papel") {
-        if (jugada2 == "tijeras"){
-            return resultado = "Gana la computadora"
-        }
-        else if (jugada2 == "piedra") {
-            return resultado = "Gana el usuario"
-        }
-    } else if (jugada1 == "tijeras") {
-        if (jugada2 == "piedra"){
-            return resultado = "Gana la computadora"
-        }
-        else if (jugada2 == "papel") {
-            return resultado = "Gana el usuario"
-        }
     }
 }
 /*5. Llama a las funciones en el orden adecuado para ejecutar el juego:
     a) Invoca la función obtenerJugadaComputadora y almacena el resultado en una variable.
     b) Invoca la función obtenerJugadaUsuario y almacena el resultado en otra variable.
-    c) Invoca la función determinarGanador pasando como argumentos las jugadas de
-    la computadora y del usuario. Almacena el resultado en una variable.*/
+    c) Invoca la función determinarGanador pasando como argumentos las jugadas de la computadora y del usuario. Almacena el resultado en una variable.*/
 obtenerJugadaComputadora ();
 obtenerJugadaUsuario ();
 determinarGanador (jugadaUsuario, jugadaComputadora);
+
+/*6. Imprime por pantalla el resultado del juego utilizando la función console.log(). El mensaje debe indicar la jugada de la computadora, la jugada del usuario y 
+el resultado del juego (quién ganó o si fue un empate). Se debe respetar el siguiente formato dependiendo del resultado:*/
 console.log("La computadora eligio: %s.", jugadaComputadora);
 console.log("El usuario eligio: %s.", jugadaUsuario);
 console.log("El resultado fue: %s.", resultado);
 
-/*6. Imprime por pantalla el resultado del juego utilizando la función console.log(). El mensaje
-debe indicar la jugada de la computadora, la jugada del usuario y el resultado del juego
-(quién ganó o si fue un empate). Se debe respetar el siguiente formato dependiendo del
-resultado:*/
+/*EXTRA 1: Definir constantes para las distintas jugadas, es decir, piedra, papel y tijera y adaptar el código para su correcta utilización.*/
+
+/*EXTRA 2: Agregar la posibilidad de que el usuario elija en cuantos jugadas quiere terminar el juego, es decir:
+    Una jugada: gana el ganador de esa única jugada.
+    Dos jugadas: gana quien gana ambas jugadas, o puede haber un empate en caso de que el usuario gane una jugada y la computadora la otra.
+    Mejor de 3: quien gane 3 o 2 jugadas será el ganador, etc.*/
